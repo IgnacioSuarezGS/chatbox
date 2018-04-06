@@ -25,13 +25,26 @@ function getAllUsers(req, res) {
 
 function createNewUSer(req, res) {
     console.log('createNewUSer')
-    usuariosModel.create
+    const newUser = req.body;
+    usuariosModel.create(newUser)
+        .then(response => {
+            return res.json(response);
+        })
+        .catch(err => {
+            return res.json(err)
+        })
 }
 
 function modifyUser(req, res) {
-    console.log('modifyUser')
+    console.log('modifyUser');
 }
 
 function getUser(req, res) {
-    console.log('getUser')
+    console.log('getUser');
+    const userToFind = {
+        id: req.params.id
+    }
+    usuariosModel.find({ _id: userToFind.id }, (err, response) => {
+        return res.json(response)
+    })
 }

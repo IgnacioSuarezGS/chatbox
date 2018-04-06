@@ -1,3 +1,10 @@
+/**
+ * GET      /idiomas/
+ */
+
+module.exports.getAllLanguages = getAllLanguages;
+
+
 var languages = [
     {
         language: "Español",
