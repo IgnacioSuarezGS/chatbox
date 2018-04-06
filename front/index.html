@@ -1,73 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Chatbox</title>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-</head>
-
-<body>
-
-	<div class="container">
-		<div class="row">
-			<div class="col bg-dark text-light" id="usuario">
-				<img id="userImage" class="rounded-circle" src="http://placehold.it/50" alt="" srcset="">
-				<strong>Nombre</strong>
-				<img id="userStatus" class="rounded-circle" src="http://placehold.it/16/0a0/0a0" alt="" srcset="">
-				<select>
-				</select>
-				<button class="btn btn-primary">Editar</button>
-			</div>
-			<div class="col bg-dark text-light d-none" id="editar_usuario">
-				<form>
-					<div class="form-group">
-						<label for="u_nombre">Nombre</label>
-						<input type="text" class="form-control" id="u_nombre" placeholder="Introduce tu nombre">
-					</div>
-					<div class="form-group">
-						<label for="u_imagen">Foto</label>
-						<input type="url" class="form-control" id="u_imagen" placeholder="URL de la imagen">
-					</div>
-					<button type="submit" class="btn btn-primary">Aceptar</button>
-				</form>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-3 bg-primary text-white">
-				<ul>
-					<li>Usuario 1</li>
-				</ul>
-			</div>
-			<div class="col-9 bg-light text-dark">
-				<div id="chatText"></div>
-				<button class="btn btn-success">Enviar</button>
-			</div>
-		</div>
-	</div>
-
-
-
-
-	<li class="d-none" id="template_user_list">
-		<img src="" alt="" srcset="">
-		<strong></strong>
-		<span></span>
-	</li>
-	<div class="row d-none" id="template_chat">
-		<div class="col-2 bg-primary">A</div>
-		<div class="col-8 bg-secondary">B</div>
-		<div class="col-2 bg-danger">C</div>
-	</div>
-
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-	<script src="assets/js/index.js"></script>
-</body>
-
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>chatbox</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
 </html>
